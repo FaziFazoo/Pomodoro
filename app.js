@@ -35,11 +35,11 @@ function start(){
         document.getElementById('seconds').innerHTML = seconds;
         
         seconds = seconds-1;
-        if(seconds < 10 && seconds > 0){
+        if(seconds < 10 && seconds >= 0){
             seconds = "0"+seconds;
         }
 
-        if(seconds === 0){
+        if(seconds === -1){
             workMinutes = workMinutes-1;
             if(workMinutes === -1){
                 if(breakCount % 2 === 0){
